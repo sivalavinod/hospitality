@@ -1,0 +1,54 @@
+<html>
+<head><style>
+caption {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<tr>
+    <th>
+       <h3><center> {{ name }}  </center></h3>
+    </th>
+</tr>
+<table align="center" border="1"> <col width="170">
+
+        <caption ><b>Entities&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Edit </b>  </caption>
+
+
+    {% for p in res1 %}
+
+        <tr>
+            <td>
+
+              <b> <i> {{ p.med }}   </i></b> </td>
+            <td>
+                <input type="text" name="code">
+            </td>
+        </tr>
+    {% endfor %}
+
+</table>
+<table align="center">
+    <tr>
+        <td> <form action="/details/">
+<center><button type="submit">Back</button></center>
+    </form>
+        </td>
+        <td>
+            <form action="/update/" method="post">
+    {% csrf_token %}
+    <center><button type="submit">Update</button></center>
+
+</form>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
+
+

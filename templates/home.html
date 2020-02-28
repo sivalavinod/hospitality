@@ -1,0 +1,33 @@
+<html>
+<head>
+    <style>
+        p.a {
+             word-spacing: 30px;
+}
+        p.b {
+             word-spacing: 1cm;
+}
+    </style>
+</head>
+<body>
+<center><h3>welcome to e-hospitality project</h3></center>
+
+<form action="details" method="post">
+    {% csrf_token %}
+<table align="center">
+    <tr>
+        <td class="a">
+            <a href="details" >Details</a>
+        </td>
+        <td  class="b">
+&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="upload">Upload File</a>
+        </td>
+    </tr>
+
+</table>
+    </form>
+
+
+</body>
+</html>

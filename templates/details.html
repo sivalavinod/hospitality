@@ -1,0 +1,110 @@
+<!--<html>
+<head>
+    <style>
+        table,tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table align="center" border="2px">
+<tr>
+    <th> section name </th>
+    <th colspan="2"> entity </th>
+</tr>
+<tr>
+{% for x,y in res.items %}
+    <td>
+            {{ x }}
+        </td>
+{% endfor %}
+</tr>
+<tr>
+{% for x,y in res.items %}
+        <td>
+            {{ y }}
+        <input type="text" >
+        </td>
+{% endfor %}
+</tr>
+
+</table>
+</body>
+</html>-->
+
+<html>
+<head>
+    <style> a {text-decoration: none;}
+        table, th, td {
+  border: 1px solid black;
+}
+        table.b {
+  table-layout: fixed;
+  width: 45%;
+}
+        td.c{
+            padding-left: 80px;
+        }
+         .count{
+            padding-left: 80px;
+             padding-top: inherit;
+        }
+    table {
+  counter-reset: section;
+}
+.count:before {
+  counter-increment: section;
+  content:  counter(section) " ";
+}
+        caption {
+  background-color: #4CAF50;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+<center><h2>JSM e-Hospitality</h2></center>
+
+<!--<form action="presenting_complaint" method="post">
+    {% csrf_token %}
+    <a href="presenting_complaint">presenting complaint</a>
+
+</form>-->
+   <!-- <form action="details" method="post">
+        {% csrf_token %}
+        {% for a in xy %}
+            <a href={{ a }}>asd</a>
+        {% endfor %}
+
+    </form>-->
+<table class="b" align="center" > <col width="170px" >
+        <caption ><b>S.No &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Entities  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Count </b>  </caption>
+        {% for xyz,yz in res.items %}
+     <tr>
+<td class="count"></td>
+     <td>
+        <a href="{% url 'presenting' data=xyz %}" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ xyz }} </a>
+      </td>
+
+         <td class="c">
+
+               {{ yz|length }}
+
+         </td>
+            </tr>
+        {% endfor %}
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
