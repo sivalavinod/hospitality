@@ -22,8 +22,8 @@ from hospital import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('',views.home),
-    path('details/',views.details),
+    path('',views.details,name='details'),
     path('<str:data>/',views.presenting,name="presenting"),
-    path('update/',views.update,name='update'),
+    path('update/<int:data>/',views.update,name='update'),
 
 ]

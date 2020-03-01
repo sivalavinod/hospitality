@@ -25,7 +25,11 @@ caption {
 
               <b> <i> {{ p.med }}   </i></b> </td>
             <td>
-                <input type="text" name="code">
+                <form action="{% url 'update' idno=data.id %}" method="post">
+                    {% csrf_token %}
+                    <input type="text" name="code">
+
+                </form>
             </td>
         </tr>
     {% endfor %}
@@ -33,12 +37,12 @@ caption {
 </table>
 <table align="center">
     <tr>
-        <td> <form action="/details/">
+        <td> <form action="{% url 'details' %}">
 <center><button type="submit">Back</button></center>
     </form>
         </td>
         <td>
-            <form action="/update/" method="post">
+            <form action="{% url 'update' %}" method="post">
     {% csrf_token %}
     <center><button type="submit">Update</button></center>
 

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="501d32fa-e1b4-430b-be58-4caeabf87c34" name="Default Changelist" comment="" />
+    <list default="true" id="501d32fa-e1b4-430b-be58-4caeabf87c34" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hospital/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsm_hospital/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jsm_hospital/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/presentingcomplaint.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/presentingcomplaint.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,47 +25,65 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="63415320">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2375" />
-          <entry key="py" value="1788" />
+          <entry key="html" value="2449" />
+          <entry key="py" value="2004" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2375" />
-          <entry key="Python" value="1788" />
+          <entry key="HTML" value="2449" />
+          <entry key="Python" value="2004" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="hospital_medicine" value="1" />
+          <entry key="hospital_medicine" value="3" />
           <entry key="html" value="6" />
           <entry key="py" value="3" />
           <entry key="sql" value="1" />
-          <entry key="sqlite3" value="1" />
+          <entry key="sqlite3" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="1" />
+          <entry key="Database Element" value="3" />
           <entry key="HTML" value="6" />
           <entry key="Python" value="3" />
-          <entry key="SQL" value="1" />
+          <entry key="SQL" value="2" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -75,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsm_hospital/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="299">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#636#668#0" expanded="true" />
               </folding>
@@ -84,26 +108,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hospital/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="469">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#0#57#0" expanded="true" />
                 <element signature="e#94#119#0" />
-                <element signature="e#1390#1464#0" />
-                <marker date="1582892707494" expanded="true" signature="1096:1725" ph="..." />
+                <element signature="e#1176#1221#0" />
+                <element signature="e#1759#1833#0" />
+                <marker date="1583059838829" expanded="true" signature="1110:1739" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hospital/models.py">
+        <entry file="file://$PROJECT_DIR$/templates/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="190">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+              <folding>
+                <element signature="e#0#523#0#HTML" />
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="e#1099#1246#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/presentingcomplaint.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -117,44 +156,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/presentingcomplaint.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/details.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#523#0#HTML" />
-                <element signature="e#633#780#0#HTML" />
-                <element signature="e#784#950#0#HTML" />
-                <element signature="n#for#2;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/hospitality" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/templates/details.html" />
-        <option value="$PROJECT_DIR$/jsm_hospital/urls.py" />
         <option value="$PROJECT_DIR$/hospital/models.py" />
+        <option value="$PROJECT_DIR$/templates/details.html" />
         <option value="$PROJECT_DIR$/templates/presentingcomplaint.html" />
         <option value="$PROJECT_DIR$/hospital/views.py" />
+        <option value="$PROJECT_DIR$/jsm_hospital/urls.py" />
       </list>
     </option>
   </component>
@@ -176,7 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,6 +212,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,12 +279,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16490166" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17170954" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36988544" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26022914" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -285,7 +300,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.08623298" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.15279879" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,9 +310,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db.sqlite3">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/59d2e50e-a012-4c2d-bab1-136c9efdce17/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -308,25 +320,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsm_hospital/settings.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsm_hospital/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="e#636#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hospital/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsm_hospital/settings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.sqlite3">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="das://59d2e50e-a012-4c2d-bab1-136c9efdce17/schema/main/table/hospital_medicine">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -335,36 +340,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hospital/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="190">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#94#119#0" />
-            <element signature="e#1390#1464#0" />
-            <marker date="1582892707494" expanded="true" signature="1096:1725" ph="..." />
+            <element signature="e#0#523#0#HTML" />
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="e#1099#1246#0#HTML" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/details.html">
+    <entry file="file://$PROJECT_DIR$/jsm_hospital/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        <state relative-caret-position="299">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#0#523#0#HTML" />
-            <element signature="e#633#780#0#HTML" />
-            <element signature="e#784#950#0#HTML" />
-            <element signature="n#for#2;n#!!top" />
+            <element signature="e#636#668#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/presentingcomplaint.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="187">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hospital/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#94#119#0" />
+            <element signature="e#1176#1221#0" />
+            <element signature="e#1759#1833#0" />
+            <marker date="1583059838829" expanded="true" signature="1110:1739" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
