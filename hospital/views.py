@@ -1,4 +1,5 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,HttpResponse
+
 import pandas as pd
 from .models import Medicine
 # Create your views here.
@@ -58,14 +59,19 @@ def presenting(request,data):
     # return render(request,"presentingcomplaint.html",{"res1":sec_ent_dict[data]})
 
 
-def update(request):
-    cd=Medicine.objects.all()
-    d={}
-    if cd:
-        for x in cd:
-            if x.code not in d:
-                d[x.med]=[x.code]
-            else:
-                d[x.med].append(x.code)
-    Medicine(code=d).save()
-    return render(request,"presentingcomplaint.html")
+def update(request,idno):
+    med=request.POST.get('med')
+    dis=request.POST.get('dis')
+    code=request.POST.get('code')
+    qs=Medicine.objects.filter(id=idno).update(dis=dis,med=med,code=code)
+    if qs:
+        return HttpResponse("Successfully updated")
+
+
+
+
+
+
+
+
+
