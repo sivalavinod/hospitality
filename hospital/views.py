@@ -61,9 +61,8 @@ def presenting(request,data):
 
 def update(request,idno):
     med=request.POST.get('med')
-    dis=request.POST.get('dis')
     code=request.POST.get('code')
-    qs=Medicine.objects.filter(id=idno).update(dis=dis,med=med,code=code)
+    qs=Medicine.objects.filter(id=idno).update(med=med,code=code)
     if qs:
         return HttpResponse("Successfully updated")
 

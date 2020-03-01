@@ -24,6 +24,6 @@ urlpatterns = [
     # path('',views.home),
     path('',views.details,name='details'),
     path('<str:data>/',views.presenting,name="presenting"),
-    path('update/<int:data>/',views.update,name='update'),
+    path('update/',views.update,name='update'),
 
 ]
