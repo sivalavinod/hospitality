@@ -1,38 +1,5 @@
-<!--<html>
-<head>
-    <style>
-        table,tr,td{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-    </style>
-</head>
-<body>
-<table align="center" border="2px">
-<tr>
-    <th> section name </th>
-    <th colspan="2"> entity </th>
-</tr>
-<tr>
-{% for x,y in res.items %}
-    <td>
-            {{ x }}
-        </td>
-{% endfor %}
-</tr>
-<tr>
-{% for x,y in res.items %}
-        <td>
-            {{ y }}
-        <input type="text" >
-        </td>
-{% endfor %}
-</tr>
 
-</table>
-</body>
-</html>-->
-
+{% load staticfiles %}
 <html>
 <head>
     <style> a {text-decoration: none;}
@@ -66,26 +33,15 @@
 </head>
 <body>
 <center><h2>JSM e-Hospitality</h2></center>
+<img src="{% static "images/hospital logo.jpg" %}">
 
-<!--<form action="presenting_complaint" method="post">
-    {% csrf_token %}
-    <a href="presenting_complaint">presenting complaint</a>
-
-</form>-->
-   <!-- <form action="details" method="post">
-        {% csrf_token %}
-        {% for a in xy %}
-            <a href={{ a }}>asd</a>
-        {% endfor %}
-
-    </form>-->
 <table class="b" align="center" > <col width="170px" >
         <caption ><b>S.No &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Entities  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Count </b>  </caption>
         {% for xyz,yz in res.items %}
      <tr>
 <td class="count"></td>
      <td>
-        <a href="{% url 'presenting' data=xyz %}" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ xyz }} </a>
+       <a href="{% url 'presenting' data=xyz %}" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ xyz }} </a>
       </td>
 
          <td class="c">
@@ -95,6 +51,13 @@
          </td>
             </tr>
         {% endfor %}
+
+
+        <i><center><h3>
+            {% if msg %}
+                {{ msg }}
+            </h3> </center></i>{% endif %}
+
 </table>
 </body>
 </html>

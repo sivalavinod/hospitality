@@ -18,12 +18,10 @@ from django.urls import path
 
 from hospital import views
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('',views.home),
     path('',views.details,name='details'),
     path('<str:data>/',views.presenting,name="presenting"),
-    path('update/',views.update,name='update'),
+    path('update/<int:x>/',views.update,name='update'),
 
 ]

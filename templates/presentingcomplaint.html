@@ -4,6 +4,13 @@ caption {
   background-color: #4CAF50;
   color: white;
 }
+      table {
+  counter-reset: section;
+}
+.count:before {
+    counter-increment: section;
+    content: counter(section) " ";
+}
 </style>
 </head>
 <body>
@@ -14,22 +21,16 @@ caption {
     </th>
 </tr>
 <table align="center" border="1"> <col width="170">
-
         <caption ><b>Entities&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Edit </b>  </caption>
-
-
     {% for p in res1 %}
-
         <tr>
-            <td>
+            <td><b> <i> {{ p.med }}   </i></b> </td>
 
-              <b> <i> {{ p.med }}   </i></b> </td>
-            <td>
-
-                    <input type="text" name="code">
-
-
-            </td>
+<form action="{% url 'update' x=p.id %}" method="post" autocomplete="off">
+    {% csrf_token %}
+    <td> <input type="text" name="code" value="{{ p.code }}"></td>
+    <td> <button type="submit">update</button></td>
+</form>
         </tr>
     {% endfor %}
 
@@ -40,18 +41,14 @@ caption {
 <center><button type="submit">Back</button></center>
     </form>
         </td>
-        <td>
-            <form action="{% url 'update' %}">
-
-    <center><button type="submit">Update</button></center>
-
-</form>
-        </td>
     </tr>
 </table>
-
-
 </body>
 </html>
+
+
+
+
+
 
 
