@@ -1,9 +1,27 @@
 <html>
-<head><style>
-caption {
-  background-color: #4CAF50;
-  color: white;
+<head>
+
+ <style>
+
+table,th,td{
+    border-collapse:collapse;
+    border-right: 0;
 }
+.z{
+
+      background-color: palegreen;
+}
+
+.a{
+    color: white;
+}
+.d{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+
       table {
   counter-reset: section;
 }
@@ -14,34 +32,77 @@ caption {
 </style>
 </head>
 <body>
-
-<tr>
-    <th>
        <h3><center> {{ name }}  </center></h3>
-    </th>
-</tr>
-<table align="center" border="1"> <col width="170">
-        <caption ><b>Entities&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Edit </b>  </caption>
-    {% for p in res1 %}
-        <tr>
-            <td><b> <i> {{ p.med }}   </i></b> </td>
-
-<form action="{% url 'update' x=p.id %}" method="post" autocomplete="off">
-    {% csrf_token %}
-    <td> <input type="text" name="code" value="{{ p.code }}"></td>
-    <td> <button type="submit">update</button></td>
-</form>
-        </tr>
-    {% endfor %}
-
-</table>
-<table align="center">
+<table align="right">
     <tr>
         <td> <form action="{% url 'details' %}">
-<center><button type="submit">Back</button></center>
+<center ><button type="submit"  >Home</button></center>
     </form>
         </td>
     </tr>
+</table>
+
+<table  align="center" border="1" > <col width="450" >
+<tr bgcolor="green" class="a">
+
+    <th>Entity</th>
+    <th>Edit</th>
+
+</tr>
+    {% for p in res1 %}
+        <tr >
+            <td class="d" ><h5 style="font-family:'Batang';" >{{ p.med }}  </h5></td>
+
+
+<form action="{% url 'update' x=p.id %}" method="post" autocomplete="off">
+    {% csrf_token %}
+
+    <td  class="">
+    <input type="text" name="code" value="{{ p.code }}" ></td>
+    <td class="z" >
+
+<button type="submit" >update</button></td>
+    {% if update %}
+        {{ res1.number }}
+    {% endif %}
+
+</form>
+        </tr>
+    {% endfor %}
+</table>
+
+  <!--   <tr >
+
+       <td>{% if res1.has_previous %}
+                    <a href="?pageno={{ res1.previous_page_number }} ">previous</a>
+            {% endif %}
+        </td>
+
+        <td> Page {{ res1.number }} of {{ res1.paginator.num_pages }}.</td>
+
+    <td>{% if res1.has_next %}
+        <a href="?pageno={{ res1.next_page_number }} ">next</a>
+        {% endif %}
+
+    </td>
+    </tr>
+<td>-->
+    <br><br>
+<!--{% for x2,x3 in res.items %}
+   <form action="{% url 'presenting' data.x2 %}" method="post"  >
+       {% csrf_token %}
+        <select >
+            <option selected="selelct" disabled>select here</option>
+        <option value="10">15</option>
+        <option value="20">20</option>
+        <option value="50">30 </option>
+    </select>
+       <button type="submit" value="get">get</button>
+    </form>
+        {% endfor %}-->
+
+
+</td>
 </table>
 </body>
 </html>

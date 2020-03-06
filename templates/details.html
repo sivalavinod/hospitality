@@ -33,7 +33,6 @@
 </head>
 <body>
 <center><h2>JSM e-Hospitality</h2></center>
-<img src="{% static "images/hospital logo.jpg" %}">
 
 <table class="b" align="center" > <col width="170px" >
         <caption ><b>S.No &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Entities  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Count </b>  </caption>
@@ -41,24 +40,20 @@
      <tr>
 <td class="count"></td>
      <td>
-       <a href="{% url 'presenting' data=xyz %}" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ xyz }} </a>
+       <a href="{% url 'presenting' data=xyz %}" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ xyz }} </a>
       </td>
-
          <td class="c">
-
                {{ yz|length }}
 
          </td>
             </tr>
         {% endfor %}
+</table>
 
-
-        <i><center><h3>
+        <b><center><h3>
             {% if msg %}
                 {{ msg }}
-            </h3> </center></i>{% endif %}
-
-</table>
+            </h3> </center></b>{% endif %}
 </body>
 </html>
 

@@ -23,5 +23,5 @@ urlpatterns = [
     path('',views.details,name='details'),
     path('<str:data>/',views.presenting,name="presenting"),
     path('update/<int:x>/',views.update,name='update'),
-
+    # path('select/',views.select,name='select'),
 ]
