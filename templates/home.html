@@ -7,27 +7,33 @@
         p.b {
              word-spacing: 1cm;
 }
+        option{
+            width: 10%;
+            height: 100px;
+        }
+
     </style>
 </head>
 <body>
 <center><h3>welcome to e-hospitality project</h3></center>
 
-<form action="details" method="post">
-    {% csrf_token %}
+
 <table align="center">
-    <tr>
-        <td class="a">
-            <a href="details" >Details</a>
-        </td>
-        <td  class="b">
-&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="upload">Upload File</a>
-        </td>
-    </tr>
+<tr><td>
+      <form action="{% url 'generate_table' t=0 %}" method="post">
+      {% csrf_token %}
+        <select name="nam">
+            <option selected="select" disabled >select doctor</option>
+{% for na in d_names  %}
+            <option>{{ na.med }}</option>
+{% endfor %}
+        </select>
+    <button type="submit">select here</button>
+    </form> </td>
 
+    <td  class="b"> <a href="//">Download raw data</a> </td>
+    <td> <a href="details">Uncoded list</a> </td> </tr>
 </table>
-    </form>
-
 
 </body>
 </html>

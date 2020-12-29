@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'jsm_hospital.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "hospitality",
+        'NAME': "valkyrie_02032020",
         'USER':"postgres",
         'PASSWORD':"vinod",
         'HOST':"127.0.0.1",
@@ -124,6 +124,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+
 
 
 

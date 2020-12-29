@@ -15,13 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from hospital import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.details,name='details'),
+    path('',views.home, name='home'),
+    path('details',views.details,name='details'),
     path('<str:data>/',views.presenting,name="presenting"),
-    path('update/<int:x>/',views.update,name='update'),
-    # path('select/',views.select,name='select'),
+    path('update/<str:x>/',views.update,name='update'),
+    path('generate_table/<t>/',views.generate_table, name='generate_table')
 ]

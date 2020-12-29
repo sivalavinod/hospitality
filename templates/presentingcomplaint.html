@@ -1,42 +1,43 @@
 <html>
 <head>
-
  <style>
-
 table,th,td{
     border-collapse:collapse;
     border-right: 0;
 }
 .z{
-
-      background-color: palegreen;
+    background-color: darkseagreen;
+    height: 5px;
 }
-
 .a{
     color: white;
 }
 .d{
     padding-top: 5px;
     padding-left: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 1px;
 }
-
-
-      table {
-  counter-reset: section;
-}
-.count:before {
-    counter-increment: section;
-    content: counter(section) " ";
-}
+    .home{
+        height: 30px;
+        width: 80px;
+        cursor: pointer;
+    }
+     .home:hover{
+         background-color:darkcyan ;
+     }
 </style>
 </head>
+
 <body>
-       <h3><center> {{ name }}  </center></h3>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="shortcut icon" href="#" />
+
+       <h3><center> {{ names }}  </center></h3>
 <table align="right">
     <tr>
         <td> <form action="{% url 'details' %}">
-<center ><button type="submit"  >Home</button></center>
+            <center ><button type="submit" class="home"><i class="fa fa-home" ></i>  Home </button></center>
     </form>
         </td>
     </tr>
@@ -46,25 +47,21 @@ table,th,td{
 <tr bgcolor="green" class="a">
 
     <th>Entity</th>
-    <th>Edit</th>
-
+    <th>Code</th>
 </tr>
     {% for p in res1 %}
         <tr >
-            <td class="d" ><h5 style="font-family:'Batang';" >{{ p.med }}  </h5></td>
+            <td class="d" ><h5 style="font-family:'Batang';" >{{ p }}  </h5></td>
 
-
-<form action="{% url 'update' x=p.id %}" method="post" autocomplete="off">
+<form action="{% url 'update' x=names %}?y={{ p }}" method="post" autocomplete="off">
     {% csrf_token %}
 
     <td  class="">
-    <input type="text" name="code" value="{{ p.code }}" ></td>
-    <td class="z" >
+    <input type="text" name="cod" required placeholder="enter code" height="10px"></td>
 
+    <td class="z" >
 <button type="submit" >update</button></td>
-    {% if update %}
-        {{ res1.number }}
-    {% endif %}
+
 
 </form>
         </tr>
@@ -102,8 +99,7 @@ table,th,td{
         {% endfor %}-->
 
 
-</td>
-</table>
+
 </body>
 </html>
 

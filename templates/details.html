@@ -1,8 +1,8 @@
 
-{% load staticfiles %}
 <html>
 <head>
-    <style> a {text-decoration: none;}
+    <style>
+        a {text-decoration: none;}
         table, th, td {
   border: 1px solid black;
 }
@@ -20,6 +20,7 @@
     table {
   counter-reset: section;
 }
+
 .count:before {
   counter-increment: section;
   content:  counter(section) " ";
@@ -32,9 +33,9 @@
     </style>
 </head>
 <body>
-<center><h2>JSM e-Hospitality</h2></center>
-
+               <center><h2>Section wise Un-coded Entities</h2></center>
 <table class="b" align="center" > <col width="170px" >
+
         <caption ><b>S.No &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Entities  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Count </b>  </caption>
         {% for xyz,yz in res.items %}
      <tr>
